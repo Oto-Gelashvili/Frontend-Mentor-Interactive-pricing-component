@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Interactive pricing component</title>
+</head>
+
+<body>
+  <div class="title">
+    <h1>Simple, traffic-based pricing</h1>
+    <h6>Sign-up for our 30-day trial. <br> No credit card required.</h6>
+    <img src="images/pattern-circles.svg" alt="circles" class="pattern">
+  </div>
+  <div class="container">
+    <div class="pricing">
+      <h3>100K PAGEVIEWS</h3>
+      <form class="form">
+        <input type="range" name="range-slider" id="range-slider" min="0" max="200" value="100" />
+      </form>
+      <p class="cost"><span>$16.00 </span>/ month</p>
+      <div class="toggle">
+        <label class="sub-type">Monthly Billing</label>
+        <input type="checkbox" class="checkbox" id="checkbox" />
+
+        <label for="checkbox" class="label">
+          <div class="ball"></div>
+        </label>
+
+        <label class="sub-type">
+          Yearly Billing
+          <span>-25% <div class="hide-discount">discount</div></span>
+        </label>
+      </div>
+    </div>
+    <div class="line"></div>
+    <div class="CTA">
+      <ul>
+        <li>
+          <img src="images/icon-check.svg" alt="check mark">
+          <p>Unlimited websites</p>
+        </li>
+        <li>
+          <img src="images/icon-check.svg" alt="check mark">
+          <p>100% data ownership</p>
+        </li>
+        <li>
+          <img src="images/icon-check.svg" alt="check mark">
+          <p>Email reports</p>
+        </li>
+      </ul>
+      <button>Start my trial</button>
+    </div>
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>
